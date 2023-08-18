@@ -1,0 +1,63 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.h-100{
+    height: 100%;
+}
+
+.m-2{
+    margin: 12px;
+}
+
+.p-4{
+    padding: 24px;
+}
+
+/**/
+#form-form{
+    & .image-upload{
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border: 4px solid purple;
+        border-radius: 100%;
+        box-shadow: 2px 3px 12px #00000060;
+        overflow: hidden;
+    }
+
+    & .image-upload img{
+        object-fit: cover;
+    }
+
+    & .image-upload i{
+        position: absolute;
+        margin: 0 auto;
+        font-size: 50px;
+        color: purple;
+    }
+
+    & #image-field{
+        position: absolute;
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        opacity: 0;
+    }
+}
